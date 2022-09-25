@@ -550,3 +550,389 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.bg-light-grayish-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(185 41% 84% / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-very-light-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(189 41% 97% / var(--tw-bg-opacity));
+}
+
+.bg-very-dark-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(183 100% 15% / var(--tw-bg-opacity));
+}
+
+.bg-strong-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(172 67% 45% / var(--tw-bg-opacity));
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.tracking-\[\.35em\] {
+  letter-spacing: .35em;
+}
+
+.tracking-\[\.55em\] {
+  letter-spacing: .55em;
+}
+
+.tracking-\[\.45em\] {
+  letter-spacing: .45em;
+}
+
+.tracking-\[\.25em\] {
+  letter-spacing: .25em;
+}
+
+.text-very-dark-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(183 100% 15% / var(--tw-text-opacity));
+}
+
+.text-dark-grayish-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(186 14% 43% / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-grayish-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(184 14% 56% / var(--tw-text-opacity));
+}
+
+.text-strong-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(172 67% 45% / var(--tw-text-opacity));
+}
+
+.text-very-light-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(189 41% 97% / var(--tw-text-opacity));
+}
+
+.text-light-grayish-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(185 41% 84% / var(--tw-text-opacity));
+}
+
+.placeholder-grayish-cyan::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: hsl(184 14% 56% / var(--tw-placeholder-opacity));
+}
+
+.placeholder-grayish-cyan::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: hsl(184 14% 56% / var(--tw-placeholder-opacity));
+}
+
+.placeholder-light-grayish-cyan::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: hsl(185 41% 84% / var(--tw-placeholder-opacity));
+}
+
+.placeholder-light-grayish-cyan::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: hsl(185 41% 84% / var(--tw-placeholder-opacity));
+}
+
+.placeholder\:text-light-grayish-cyan::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(185 41% 84% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-light-grayish-cyan::placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(185 41% 84% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-grayish-cyan::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(184 14% 56% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-grayish-cyan::placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(184 14% 56% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-very-light-cyan::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(189 41% 97% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-very-light-cyan::placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(189 41% 97% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-dark-grayish-cyan::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(186 14% 43% / var(--tw-text-opacity));
+}
+
+.placeholder\:text-dark-grayish-cyan::placeholder {
+  --tw-text-opacity: 1;
+  color: hsl(186 14% 43% / var(--tw-text-opacity));
+}
+
+.focus\:border-very-dark-cyan:focus {
+  --tw-border-opacity: 1;
+  border-color: hsl(183 100% 15% / var(--tw-border-opacity));
+}
+
+.focus\:outline-very-dark-cyan:focus {
+  outline-color: hsl(183, 100%, 15%);
+}
+
+.active\:border-very-dark-cyan:active {
+  --tw-border-opacity: 1;
+  border-color: hsl(183 100% 15% / var(--tw-border-opacity));
+}
