@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="./script.js" defer></script>
     <title>Splitter</title>
   </head>
   <body class="bg-light-grayish-cyan">
@@ -26,7 +27,7 @@
     <div class="flex flex-col bg-white rounded-t-2xl p-10 mx-auto">
       <!-- BILL -->
       <div class="flex flex-col">
-        <h3 class="text-dark-grayish-cyan text-lg mb-2">Bill</h3>
+        <label class="text-dark-grayish-cyan text-lg mb-2">Bill</label>
         <div class="relative">
           <img
             src="./images/icon-dollar.svg"
@@ -35,6 +36,7 @@
           />
           <input
             type="number"
+            id="bill"
             class="bg-very-light-cyan p-4 w-full rounded-xl text-very-dark-cyan text-right text-2xl placeholder:text-grayish-cyan focus:outline-very-dark-cyan"
             placeholder="0"
           />
@@ -42,43 +44,46 @@
       </div>
       <!-- SELECT TIP PERCENTAGE -->
       <div class="flex flex-col mt-10">
-        <h3 class="text-dark-grayish-cyan text-lg mb-3">Select tip %</h3>
+        <label class="text-dark-grayish-cyan text-lg mb-3">Select tip %</label>
         <div class="grid grid-cols-2 gap-4">
           <div
-            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl"
+            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl percentage"
           >
             5%
           </div>
           <div
-            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl"
+            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl percentage"
           >
             10%
           </div>
           <div
-            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl"
+            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl percentage"
           >
             15%
           </div>
           <div
-            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl"
+            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl percentage"
           >
             25%
           </div>
           <div
-            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl"
+            class="flex justify-center items-center p-3 bg-very-dark-cyan text-white rounded-lg text-2xl percentage"
           >
             50%
           </div>
-          <div
-            class="flex justify-center items-center p-3 bg-very-light-cyan text-dark-grayish-cyan rounded-lg text-2xl"
-          >
-            Custom
-          </div>
+          <input
+            type="number"
+            class="flex justify-center items-center p-3 bg-very-light-cyan text-dark-grayish-cyan rounded-lg text-2xl text-center placeholder:text-center focus:outline-very-dark-cyan"
+            placeholder="Custom"
+            id="tip-custom"
+          />
         </div>
       </div>
       <!-- NUMBER OF PEOPLE -->
       <div class="flex flex-col mt-10">
-        <h3 class="text-dark-grayish-cyan text-lg mb-2">Number of people</h3>
+        <label class="text-dark-grayish-cyan text-lg mb-2"
+          >Number of people</label
+        >
         <div class="relative">
           <img
             src="./images/icon-person.svg"
@@ -87,9 +92,13 @@
           />
           <input
             type="number"
-            class="bg-very-light-cyan p-4 w-full rounded-xl text-very-dark-cyan text-right text-2xl placeholder:text-grayish-cyan focus:outline-very-dark-cyan"
-            placeholder="0"
+            class="peer bg-very-light-cyan p-4 w-full rounded-xl text-very-dark-cyan text-right text-2xl placeholder:text-grayish-cyan focus:outline-very-dark-cyan"
+            placeholder="1"
+            id="person"
           />
+          <p class="mt-2 invisible text-pink-600 text-sm" id="error">
+            Number of people can't be zero.
+          </p>
         </div>
       </div>
       <!-- FINAL OUTPUT -->
@@ -99,17 +108,18 @@
             <p class="text-very-light-cyan">Tip Amount</p>
             <p class="text-dark-grayish-cyan">/ person</p>
           </div>
-          <p class="text-3xl text-strong-cyan">$4.27</p>
+          <p class="text-3xl text-strong-cyan" id="tipAmount">$ 0.00</p>
         </div>
         <div class="flex justify-between items-center mt-5">
           <div class="flex flex-col">
             <p class="text-very-light-cyan">Total</p>
             <p class="text-dark-grayish-cyan">/ person</p>
           </div>
-          <p class="text-3xl text-strong-cyan">$32.79</p>
+          <p class="text-3xl text-strong-cyan" id="totalAmount">$ 0.00</p>
         </div>
         <div
           class="flex justify-center items-center bg-strong-cyan text-very-dark-cyan p-3 mt-5 rounded-lg"
+          id="reset"
         >
           RESET
         </div>
